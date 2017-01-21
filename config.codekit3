@@ -21,6 +21,14 @@
 		"oAP": "\/docs\/.gitignore",
 		"oF": 0
 		},
+	"\/blend-mode.mov.gif": {
+		"ft": 4194304,
+		"iS": 1814347,
+		"oA": 1,
+		"oAP": "\/docs\/blend-mode.mov.gif",
+		"oF": 1,
+		"opt": 1
+		},
 	"\/docs": {
 		"ft": 65536,
 		"oA": 1,
@@ -32,6 +40,24 @@
 		"oA": 1,
 		"oAP": "\/docs\/node_modules",
 		"oF": 1
+		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/docs\/README.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/source\/assets\/css\/normalize.scss": {
 		"aP": 1,
@@ -109,7 +135,7 @@
 	"displayValue": "WhatColorIsIt",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_teal",
-	"lastBuiltDate": 506715435
+	"lastBuiltDate": 506719105
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
