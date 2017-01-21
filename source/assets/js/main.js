@@ -11,6 +11,7 @@ function setDate() {
   text.textContent = hexTime;
   document.querySelector('body').style.background = hexTime;
   document.querySelector('meta[name="theme-color"]').setAttribute('content', hexTime);
+  document.querySelector('link[rel="mask-icon"]').setAttribute('color', hexTime);
 }
 
 setInterval(setDate, 1000);
