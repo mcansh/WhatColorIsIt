@@ -29,9 +29,9 @@
 		},
 	"\/node_modules": {
 		"ft": 65536,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/docs\/node_modules",
-		"oF": 0
+		"oF": 1
 		},
 	"\/source\/assets\/css\/style.sass": {
 		"aP": 1,
@@ -83,7 +83,7 @@
 	"displayValue": "WhatColorIsIt",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_teal",
-	"lastBuiltDate": 506659244
+	"lastBuiltDate": 506659463
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
