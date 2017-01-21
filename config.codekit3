@@ -33,6 +33,19 @@
 		"oAP": "\/docs\/node_modules",
 		"oF": 1
 		},
+	"\/source\/assets\/css\/normalize.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/docs\/assets\/css\/normalize.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/assets\/css\/style.sass": {
 		"aP": 1,
 		"bl": 0,
@@ -42,6 +55,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/docs\/assets\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/assets\/css\/SYSTEMFONTS.sass": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/docs\/assets\/css\/SYSTEMFONTS.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -83,7 +109,7 @@
 	"displayValue": "WhatColorIsIt",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_teal",
-	"lastBuiltDate": 506659463
+	"lastBuiltDate": 506715435
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
