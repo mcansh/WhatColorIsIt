@@ -10,6 +10,7 @@ function setDate() {
   const hexTime = `#${hours}${minutes}${seconds}`;
   text.textContent = hexTime;
   document.querySelector('body').style.background = hexTime;
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', hexTime);
 }
 
 setInterval(setDate, 1000);
