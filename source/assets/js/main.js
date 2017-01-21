@@ -14,3 +14,7 @@ function setDate() {
 }
 
 setInterval(setDate, 1000);
+
+window.onload = function fade() {
+  document.querySelector('body').style.opacity = 1;
+};
