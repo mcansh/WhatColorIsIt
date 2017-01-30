@@ -17,17 +17,9 @@
 		},
 	"\/.gitignore": {
 		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/docs\/.gitignore",
-		"oF": 0
-		},
-	"\/blend-mode.mov.gif": {
-		"ft": 4194304,
-		"iS": 1814347,
 		"oA": 1,
-		"oAP": "\/docs\/blend-mode.mov.gif",
-		"oF": 1,
-		"opt": 1
+		"oAP": "\/docs\/.gitignore",
+		"oF": 1
 		},
 	"\/docs": {
 		"ft": 65536,
@@ -135,7 +127,7 @@
 	"displayValue": "WhatColorIsIt",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_teal",
-	"lastBuiltDate": 506719105
+	"lastBuiltDate": 507505937
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
