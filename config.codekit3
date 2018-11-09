@@ -13,7 +13,7 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/docs/.eslintignore",
+		"oAP": "/build/.eslintignore",
 		"oF": 1
 		},
 	"/.eslintrc.js": {
@@ -21,7 +21,7 @@
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/docs/.eslintrc.min.js",
+		"oAP": "/build/.eslintrc.min.js",
 		"oF": 1,
 		"sC": 0,
 		"tS": 1
@@ -30,25 +30,33 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/docs/.gitignore",
+		"oAP": "/build/.gitignore",
 		"oF": 1
 		},
-	"/docs": {
+	"/build": {
 		"ft": 65536,
 		"oA": 1,
-		"oAP": "/docs/docs",
+		"oAP": "/build/build",
 		"oF": 0
 		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 1,
-		"oAP": "/docs/node_modules",
+		"oAP": "/build/node_modules",
 		"oF": 0
+		},
+	"/now.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/build/now-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"/package.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/docs/package-min.json",
+		"oAP": "/build/package-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
@@ -62,7 +70,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 1,
-		"oAP": "/docs/README.html",
+		"oAP": "/build/README.html",
 		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
@@ -79,7 +87,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/docs/assets/css/normalize.css",
+		"oAP": "/build/assets/css/normalize.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -92,7 +100,7 @@
 		"ft": 2,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/docs/assets/css/style.css",
+		"oAP": "/build/assets/css/style.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -105,7 +113,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/docs/assets/css/SYSTEMFONTS.css",
+		"oAP": "/build/assets/css/SYSTEMFONTS.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -115,7 +123,7 @@
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/docs/assets/js/main.min.js",
+		"oAP": "/build/assets/js/main.min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 1
@@ -125,7 +133,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/docs/index.html",
+		"oAP": "/build/index.html",
 		"oF": 0,
 		"oS": 1
 		},
@@ -133,7 +141,7 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/docs/yarn.lock",
+		"oAP": "/build/yarn.lock",
 		"oF": 1
 		}
 	},
@@ -147,7 +155,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_teal",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 563424473.63084197
+	"lastBuiltDate": 563425126.05509305
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -390,7 +398,7 @@
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 1,
-	"buildFolderName": "docs",
+	"buildFolderName": "build",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -2427,7 +2435,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": "/docs"
+	"websiteRelativeRoot": "/build"
 	},
 "settingsFileVersion": "3"
 }

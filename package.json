@@ -5,6 +5,9 @@
   "author": "Logan McAnsh <logan@mcan.sh> (https://mcan.sh)",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "deploy": "cp now.json build && now build"
+  },
   "devDependencies": {
     "babel-eslint": "10.0.1",
     "eslint": "5.8.0",

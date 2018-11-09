@@ -1,0 +1,15 @@
+{
+  "name": "whatcolorisit",
+  "version": 2,
+  "public": true,
+  "alias": [
+    "whatcolorisit.now.sh",
+    "whatcolorisit.loganmcansh.com"
+  ],
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@now/static"
+    }
+  ]
+}
