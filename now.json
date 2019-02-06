@@ -8,8 +8,33 @@
   ],
   "builds": [
     {
-      "src": "**/*",
-      "use": "@now/static"
+      "src": "next.config.js",
+      "use": "@now/next@canary"
+    },
+    {
+      "src": "lib/manifest.ts ",
+      "use": "@now/node@canary"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/sw.js",
+      "dest": "/_next/static/sw.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
+    },
+    {
+      "src": "/manifest.webmanifest",
+      "dest": "/lib/manifest.ts",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }

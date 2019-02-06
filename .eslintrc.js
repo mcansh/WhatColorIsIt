@@ -1,3 +1,11 @@
 module.exports = {
-  extends: ['mcansh/base'],
+  extends: ['mcansh/typescript'],
+  rules: {
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        ignoreRestSiblings: true,
+      },
+    ],
+  },
 };
