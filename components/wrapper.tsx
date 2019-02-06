@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 import { invert } from 'polished';
+import HexColor from '~/types/hex-color';
 
-const Wrapper = styled.div<{ color: string }>`
+const Wrapper = styled.div<HexColor>`
   transition: background-color 0.2s ease, color 0.2s ease;
-  color: ${props => invert(props.color)};
-  background: ${props => props.color};
+  color: ${props => invert(props.hexColor)};
+  background: ${props => props.hexColor};
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 

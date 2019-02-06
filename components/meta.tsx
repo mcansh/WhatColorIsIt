@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
+import HexColor from '~/types/hex-color';
 
-const Meta = ({ color }: { color: string }) => {
+const Meta = ({ hexColor }: HexColor) => {
   const icons = [228, 195, 152, 144, 128, 120, 96, 72, 57, 32];
 
   return (
@@ -12,8 +13,8 @@ const Meta = ({ color }: { color: string }) => {
         content="initial-scale=1.0, width=device-width, viewport-fit=cover"
       />
       <link rel="manifest" href="/manifest.webmanifest" />
-      <link rel="mask-icon" href="/static/logo/safari.svg" color={color} />
-      <meta name="theme-color" content={color} />
+      <link rel="mask-icon" href="/static/logo/safari.svg" color={hexColor} />
+      <meta name="theme-color" content={hexColor} />
       <meta
         name="apple-mobile-web-app-status-bar-style"
         content="black-translucent"

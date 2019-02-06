@@ -6,6 +6,7 @@ import Wrapper from '~/components/wrapper';
 import useColor from '~/lib/useColor';
 import Meta from '~/components/meta';
 import getColor from '~/lib/getColor';
+import Sharing from '~/components/sharing';
 
 const regSW = async () => {
   try {
@@ -30,14 +31,19 @@ const Index = ({ initialColor }: Props) => {
   }, []);
 
   return (
-    <Wrapper color={color}>
+    <Wrapper hexColor={color}>
       <GlobalStyle />
-      <Meta color={color} />
+      <Meta hexColor={color} />
       <Head>
         <title>{color} - What Color Is It?</title>
       </Head>
       <Spring native from={{ opacity: 0 }} to={{ opacity: 1 }}>
-        {styles => <animated.h1 style={styles}>{color}</animated.h1>}
+        {styles => (
+          <animated.div style={styles}>
+            <animated.h1 style={styles}>{color}</animated.h1>
+            <Sharing hexColor={color} />
+          </animated.div>
+        )}
       </Spring>
     </Wrapper>
   );
