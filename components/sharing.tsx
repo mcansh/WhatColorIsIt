@@ -1,7 +1,6 @@
 import React from 'react';
 import Router from 'next/router';
 import styled from 'styled-components';
-import { invert } from 'polished';
 import HexColor from '~/types/hex-color';
 import { NavigatorShare } from '~/types/extended-navigator';
 
@@ -10,7 +9,7 @@ const Button = styled.button.attrs({ type: 'button' })<HexColor>`
   bottom: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background: ${props => invert(props.hexColor)};
+  background: white;
   color: ${props => props.hexColor};
   border: none;
   border-radius: 4px;

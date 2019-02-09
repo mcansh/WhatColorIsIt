@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import { invert } from 'polished';
 import HexColor from '~/types/hex-color';
 
 const Wrapper = styled.div<HexColor>`
   transition: background-color 0.2s ease, color 0.2s ease;
-  color: ${props => invert(props.hexColor)};
+  color: white;
   background: ${props => props.hexColor};
   height: 100%;
   display: flex;
