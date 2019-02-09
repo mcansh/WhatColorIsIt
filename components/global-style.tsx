@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
+const fontStack =
+  '"SF Mono", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif';
+
 const GlobalStyle = createGlobalStyle`
   html {
     font-size: 10px;
@@ -20,8 +23,12 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
+  button {
+    font-family: ${fontStack};
+  }
+
   body {
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: ${fontStack};
     line-height: 1.47059;
   }
 `;

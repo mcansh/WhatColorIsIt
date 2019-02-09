@@ -14,7 +14,8 @@ const Wrapper = styled.div<HexColor>`
   h1 {
     font-weight: 400;
     font-size: 8rem;
-
+    font-feature-settings: 'tnum';
+    font-variant-numeric: tabular-nums;
     @media (min-width: 600px) {
       font-size: 12.8rem;
     }
