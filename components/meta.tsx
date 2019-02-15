@@ -1,10 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 import HexColor from '~/types/hex-color';
+import { iconSizes } from '~/config';
 
 const Meta = ({ hexColor }: HexColor) => {
-  const icons = [228, 195, 152, 144, 128, 120, 96, 72, 57, 32];
-
   return (
     <Head>
       <meta charSet="utf-8" />
@@ -23,7 +22,7 @@ const Meta = ({ hexColor }: HexColor) => {
       />
       <link rel="shortcut icon" href="/static/logo/logo.png" />
       <link rel="shortcut icon" href="/static/logo/logo.ico" />
-      {icons.map(icon => {
+      {iconSizes.map(icon => {
         const size = `${icon}x${icon}`;
         return (
           <link

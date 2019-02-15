@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-
-const fontStack =
-  '"SF Mono", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif';
+import { fontStack } from '~/config';
 
 const GlobalStyle = createGlobalStyle`
   html {
