@@ -2,20 +2,7 @@
   "name": "whatcolorisit",
   "version": 2,
   "public": true,
-  "alias": [
-    "whatcolorisit.now.sh",
-    "whatcolorisit.loganmcansh.com"
-  ],
-  "builds": [
-    {
-      "src": "next.config.js",
-      "use": "@now/next@canary"
-    },
-    {
-      "src": "lib/manifest.ts ",
-      "use": "@now/node@canary"
-    }
-  ],
+  "alias": ["whatcolorisit.now.sh", "whatcolorisit.loganmcansh.com"],
   "routes": [
     {
       "src": "/sw.js",
@@ -27,14 +14,10 @@
     },
     {
       "src": "/manifest.webmanifest",
-      "dest": "/lib/manifest.ts",
+      "dest": "/api/manifest",
       "headers": {
         "cache-control": "public, max-age=43200, immutable"
       }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
     }
   ]
 }

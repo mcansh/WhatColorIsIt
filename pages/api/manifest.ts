@@ -1,8 +1,8 @@
-import { IncomingMessage, ServerResponse } from 'http';
-import getColor from './getColor';
-import { iconSizes } from '../config';
+import { NextApiRequest, NextApiResponse } from 'next';
+import getColor from '~/lib/getColor';
+import { iconSizes } from '~/config';
 
-const manifest = (_req: IncomingMessage, res: ServerResponse) => {
+const manifest = (_req: NextApiRequest, res: NextApiResponse) => {
   const color = getColor();
 
   const json = {
@@ -19,8 +19,7 @@ const manifest = (_req: IncomingMessage, res: ServerResponse) => {
     })),
   };
 
-  res.writeHead(200, { 'Content-Type': 'application/manifest+json' });
-  res.end(JSON.stringify(json));
+  res.json(json);
 };
 
 export default manifest;
