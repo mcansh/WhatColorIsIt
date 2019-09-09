@@ -1,8 +1,6 @@
 import React from 'react';
-import Router from 'next/router';
 import styled from 'styled-components';
 import HexColor from '~/types/hex-color';
-import { NavigatorShare } from '~/types/extended-navigator';
 
 const Button = styled.button.attrs({ type: 'button' })<HexColor>`
   position: absolute;
@@ -26,8 +24,7 @@ const Sharing = ({ hexColor }: HexColor) => {
   const shareHexTime = async () => {
     if ('share' in window.navigator) {
       try {
-        const windowNavigator = window.navigator as NavigatorShare;
-        await windowNavigator.share({
+        await window.navigator.share({
           title: 'What Color Is It?',
           text: `The time is currently ${hexColor}!`,
           url: 'http://whatcolorisit.loganmcansh.com',
@@ -40,7 +37,7 @@ const Sharing = ({ hexColor }: HexColor) => {
         `The time is currently ${hexColor}! - http://whatcolorisit.loganmcansh.com`
       )}`;
 
-      Router.push(encodedURL);
+      location.assign(encodedURL);
     }
   };
 
