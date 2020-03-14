@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 import GlobalStyle from '~/components/global-style';
 import Wrapper from '~/components/wrapper';
-import useColor from '~/lib/useColor';
+import { useColor } from '~/lib/useColor';
 import Meta from '~/components/meta';
 import Sharing from '~/components/sharing';
 
