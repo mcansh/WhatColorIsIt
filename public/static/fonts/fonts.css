@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'SF Mono';
-  src: url('./SF_Mono.woff2') format('woff2'),
-       url('./SF_Mono.woff') format('woff');
+  src: url('/static/fonts/SF_Mono.woff2') format('woff2'),
+       url('/static/fonts/SF_Mono.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

@@ -11,8 +11,6 @@ const Meta = ({ hexColor }: HexColor) => (
       name="viewport"
       content="initial-scale=1.0, width=device-width, viewport-fit=cover"
     />
-    <link rel="stylesheet" href="/static/fonts/fonts.css" />
-    <link rel="preload" href="/static/fonts/fonts.css" as="style" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="mask-icon" href="/static/logo/safari.svg" color={hexColor} />
     <meta name="theme-color" content={hexColor} />
