@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useSpring, animated } from 'react-spring';
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 
 import GlobalStyle from '~/components/global-style';
@@ -27,8 +27,6 @@ const Index = () => {
     }
   }, []);
 
-  const fadeIn = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
-
   return (
     <Wrapper hexColor={color}>
       <GlobalStyle />
@@ -36,10 +34,10 @@ const Index = () => {
       <Head>
         <title>{color} - What Color Is It?</title>
       </Head>
-      <animated.div style={fadeIn}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: color ? 1 : 0 }}>
         <h1>{color}</h1>
         <Sharing hexColor={color} />
-      </animated.div>
+      </motion.div>
     </Wrapper>
   );
 };
