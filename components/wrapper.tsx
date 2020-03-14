@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import HexColor from '~/types/hex-color';
+
+import { HexColor } from '~/@types/hex-color';
 
 const Wrapper = styled.div<HexColor>`
   transition: background-color 0.2s ease, color 0.2s ease;

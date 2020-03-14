@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
+
 import getColor from './getColor';
 
-const useColor = (initialColor: string) => {
-  const [color, setColor] = useState(() => initialColor);
+const useColor = () => {
+  const [color, setColor] = useState('');
 
   useEffect(() => {
     const interval = setInterval(() => {

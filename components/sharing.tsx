@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import HexColor from '~/types/hex-color';
 
-const Button = styled.button.attrs({ type: 'button' })<HexColor>`
+import { HexColor } from '~/@types/hex-color';
+
+const Button = styled.button.attrs({ type: 'button' }) <HexColor>`
   position: absolute;
   bottom: 1.5rem;
   left: 50%;
@@ -22,7 +23,7 @@ const Button = styled.button.attrs({ type: 'button' })<HexColor>`
 
 const Sharing = ({ hexColor }: HexColor) => {
   const shareHexTime = async () => {
-    if ('share' in window.navigator) {
+    if (typeof window.navigator.share !== 'undefined') {
       try {
         await window.navigator.share({
           title: 'What Color Is It?',

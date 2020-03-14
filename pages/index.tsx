@@ -1,28 +1,25 @@
 import React, { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import Head from 'next/head';
+
 import GlobalStyle from '~/components/global-style';
 import Wrapper from '~/components/wrapper';
 import useColor from '~/lib/useColor';
 import Meta from '~/components/meta';
-import getColor from '~/lib/getColor';
 import Sharing from '~/components/sharing';
 
 const regSW = async () => {
   try {
     await navigator.serviceWorker.register('/sw.js');
+    // eslint-disable-next-line no-console
     console.log('SW registered');
   } catch (error) {
-    console.log('SW registration failed: ', error);
+    console.error('SW registration failed: ', error);
   }
 };
 
-interface Props {
-  initialColor: string;
-}
-
-const Index = ({ initialColor }: Props) => {
-  const color = useColor(initialColor);
+const Index = () => {
+  const color = useColor();
 
   useEffect(() => {
     if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
@@ -45,12 +42,6 @@ const Index = ({ initialColor }: Props) => {
       </animated.div>
     </Wrapper>
   );
-};
-
-Index.getInitialProps = () => {
-  const initialColor = getColor();
-
-  return { initialColor };
 };
 
 export default Index;
